@@ -15,7 +15,7 @@ namespace BasicCorePrograms
             // Prints all the numbers of 2  
             while (n % 2 == 0)
             {
-                Console.Write("2 ");
+                Console.WriteLine("2 ");
                 n /= 2;
             }
 
@@ -25,7 +25,7 @@ namespace BasicCorePrograms
             {
                 while (n % i == 0)
                 {
-                    Console.Write($"{i} ");
+                    Console.WriteLine($"{i} ");
                     n /= i;
                 }
             }
@@ -33,7 +33,7 @@ namespace BasicCorePrograms
             // This is for case if n is greater than 2
             if (n > 2)
             {
-                Console.Write($"{n} ");
+                Console.WriteLine($"{n} ");
             }
 
         }
