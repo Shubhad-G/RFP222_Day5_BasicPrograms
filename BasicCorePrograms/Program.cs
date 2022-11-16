@@ -11,7 +11,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n8.Even or odd");
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n8.Even or odd\n9.Vowel or consanant");
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -61,7 +61,11 @@ namespace BasicCorePrograms
                     int num=Convert.ToInt32(Console.ReadLine());
                     EvenOdd.evenOdd(num);
                     break;
-
+                case 9:
+                    Console.WriteLine("enter an alphabet to find whether it is vowel or consonant");
+                    char s=Convert.ToChar(Console.ReadLine());
+                    VowelConsonant.vowelConsonant(s);
+                    break;
             }     
             Console.ReadLine();
         }
