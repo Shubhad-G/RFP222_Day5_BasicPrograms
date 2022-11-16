@@ -11,7 +11,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number");
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors");
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -35,6 +35,11 @@ namespace BasicCorePrograms
                     Console.WriteLine("enter a number to find nth harmonic number");
                     float harmonic=(float)(Convert.ToSingle(Console.ReadLine()));
                     HarmonicNumber.harmonicNumber(harmonic);
+                    break;
+                case 5:
+                    Console.WriteLine("enter a number");
+                    int k = Convert.ToInt32(Console.ReadLine());
+                    PrimeFactors.primeFactors(k);
                     break;
             }     
             Console.ReadLine();
