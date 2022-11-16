@@ -26,6 +26,11 @@ namespace BasicCorePrograms
                     int n = Convert.ToInt32(Console.ReadLine());
                     LeapYear.leapYear(n);
                     break;
+                case 3:
+                    Console.WriteLine("enter a number within 32");
+                        int p=Convert.ToInt32(Console.ReadLine());
+                    PowerOf2Table.powerOf2(p);
+                    break;
             }     
             Console.ReadLine();
         }
