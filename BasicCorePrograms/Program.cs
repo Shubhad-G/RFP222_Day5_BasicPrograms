@@ -10,13 +10,23 @@ namespace BasicCorePrograms
     {
         static void Main(string[] args)
         {
-            int x;
-            Console.WriteLine("enter how many times coin has to be flipped");
-            x=Convert.ToInt32(Console.ReadLine());
-            FlipCoin.flip(x);
-            Console.WriteLine("enter the year to find whether the given year is leap year or not");
-            int n = Convert.ToInt32(Console.ReadLine());
-            LeapYear.leapYear(n);
+            int option;
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program");
+            option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    int x;
+                    Console.WriteLine("enter how many times coin has to be flipped");
+                    x = Convert.ToInt32(Console.ReadLine());
+                    FlipCoin.flip(x);
+                    break;
+                case 2:
+                    Console.WriteLine("enter the year to find whether the given year is leap year or not");
+                    int n = Convert.ToInt32(Console.ReadLine());
+                    LeapYear.leapYear(n);
+                    break;
+            }     
             Console.ReadLine();
         }
     }
