@@ -11,7 +11,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors");
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder");
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -41,6 +41,15 @@ namespace BasicCorePrograms
                     int k = Convert.ToInt32(Console.ReadLine());
                     PrimeFactors.primeFactors(k);
                     break;
+                case 6:
+                    Console.WriteLine("enter two numbers to find the quotient and reminder");
+                    Console.WriteLine("enter the first number");
+                    int one=Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("enter the second number");
+                    int two = Convert.ToInt32(Console.ReadLine());
+                    QuotientReminder.quotientReminder(one, two);
+                    break;
+
             }     
             Console.ReadLine();
         }
