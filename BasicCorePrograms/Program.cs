@@ -11,7 +11,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n8.Even or odd\n9.Vowel or consanant");
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n8.Even or odd\n9.Vowel or consanant\n10.Largest among three");
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -65,6 +65,15 @@ namespace BasicCorePrograms
                     Console.WriteLine("enter an alphabet to find whether it is vowel or consonant");
                     char s=Convert.ToChar(Console.ReadLine());
                     VowelConsonant.vowelConsonant(s);
+                    break;
+                case 10:
+                    Console.WriteLine("enter three numbers\nenter the first number");
+                    int firstNum=Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("enter the second number");
+                    int secondNum = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("enter the third number");
+                    int thirdNum = Convert.ToInt32(Console.ReadLine());
+                    LargestOfThree.largestOf3(firstNum, secondNum, thirdNum);
                     break;
             }     
             Console.ReadLine();
