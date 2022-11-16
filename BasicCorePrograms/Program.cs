@@ -11,7 +11,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n");
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n8.Even or odd");
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -56,6 +56,12 @@ namespace BasicCorePrograms
                     int secondNumber = Convert.ToInt32(Console.ReadLine());
                     Swap.swapTwoNumbers(firstNumber, secondNumber);
                     break;
+                case 8:
+                    Console.WriteLine("enter a number to find whether a given number is even or odd");
+                    int num=Convert.ToInt32(Console.ReadLine());
+                    EvenOdd.evenOdd(num);
+                    break;
+
             }     
             Console.ReadLine();
         }
