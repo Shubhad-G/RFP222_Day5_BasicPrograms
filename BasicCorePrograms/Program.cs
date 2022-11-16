@@ -11,7 +11,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder");
+            Console.WriteLine("options:\n1.Flip coin program\n2.Leap year program\n3.Power of 2 table program\n4.Harmonic number\n5Prime Factors\n6.Quotient and reminder\n7.Swaping of two numbers\n");
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -49,7 +49,13 @@ namespace BasicCorePrograms
                     int two = Convert.ToInt32(Console.ReadLine());
                     QuotientReminder.quotientReminder(one, two);
                     break;
-
+                case 7:
+                    Console.WriteLine("enter first number");
+                    int firstNumber=Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("enter second number");
+                    int secondNumber = Convert.ToInt32(Console.ReadLine());
+                    Swap.swapTwoNumbers(firstNumber, secondNumber);
+                    break;
             }     
             Console.ReadLine();
         }
